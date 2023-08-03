@@ -25,6 +25,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
-          file: ${{ matrix.image }}
+          file: ${{ matrix.image }}/Dockerfile
           push: true
           tags: osbm/${{ matrix.image }}:latest
